@@ -9,7 +9,26 @@ main{
 main, article, header, footer, nav{
     border:1px solid black;
     padding:10px;
+    box-sizing:border-box;
 }
 article, header, footer, nav{
     background:white;
+}
+
+main{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+header, nav, footer{
+    flex:0 0 100%;
+}
+article{
+    flex:0 0 calc(33.3333% - 10px);
+    margin:5px;
+}
+@media screen and (max-width:600px){
+    main{
+    flex-direction:column;
+}
 }
