@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+body{
+    background:gray;
+}
+main{
+    background:pink;
+}
+main, article, header, footer, nav{
+    border:1px solid black;
+    padding:10px;
+}
+article, header, footer, nav{
+    background:white;
+}
